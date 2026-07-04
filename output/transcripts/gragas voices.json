@@ -1,0 +1,80 @@
+{
+    "language": "en",
+    "segments": [
+        {
+            "start": 0.0,
+            "end": 3.0,
+            "text": " Last call, have a drink!"
+        },
+        {
+            "start": 3.0,
+            "end": 4.5,
+            "text": " Argh!"
+        },
+        {
+            "start": 4.5,
+            "end": 6.0,
+            "text": " Don't shits!"
+        },
+        {
+            "start": 6.0,
+            "end": 9.0,
+            "text": " Abbey our incoming!"
+        },
+        {
+            "start": 9.0,
+            "end": 10.3,
+            "text": " Fight time!"
+        },
+        {
+            "start": 10.3,
+            "end": 12.8,
+            "text": " Time to roll out the barrel!"
+        },
+        {
+            "start": 21.0,
+            "end": 25.5,
+            "text": " The only time I have a drinking problem is when I spill it!"
+        },
+        {
+            "start": 30.5,
+            "end": 33.5,
+            "text": " Hahaha!"
+        },
+        {
+            "start": 33.5,
+            "end": 36.0,
+            "text": " Don't get pushy!"
+        },
+        {
+            "start": 36.0,
+            "end": 39.0,
+            "text": " Yeah, yeah, need some grog!"
+        },
+        {
+            "start": 39.0,
+            "end": 40.5,
+            "text": " Oh, yeah!"
+        },
+        {
+            "start": 40.5,
+            "end": 42.0,
+            "text": " Get some!"
+        },
+        {
+            "start": 42.0,
+            "end": 43.5,
+            "text": " I'm on it!"
+        },
+        {
+            "start": 43.5,
+            "end": 45.5,
+            "text": " Let's get this party started!"
+        },
+        {
+            "start": 47.5,
+            "end": 51.0,
+            "text": " I'll drink you under the table, scrub!"
+        }
+    ]
+}
