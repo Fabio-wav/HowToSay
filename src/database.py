@@ -31,7 +31,14 @@ class Database:
                 FOREIGN KEY(video_id) REFERENCES videos(id)
             )
         """)
+
+        self.cursor.execute("""
+            CREATE INDEX IF NOT EXISTS idx_occurrences_video_id
+            ON occurrences(video_id)
+        """)
+
         self.connection.commit()
+
 
     def insert_occurrence(self, occurrence: Occurrence, video_id: int):
 
@@ -121,3 +128,12 @@ class Database:
         """, (file_hash,))
 
         return self.cursor.fetchone()[0]
+    
+    def video_exists(self, file_hash: str) -> bool:
+        self.cursor.execute("""
+            SELECT 1
+            FROM videos
+            WHERE hash = ?
+        """, (file_hash,))
+
+        return self.cursor.fetchone() is not None

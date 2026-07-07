@@ -2,7 +2,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
 
-FFMPEG = BASE_DIR / "ffmpeg" / "ffmpeg.exe"
+FFMPEG = "ffmpeg"
 
 VIDEOS_DIR = BASE_DIR / "videos"
 INPUT_DIR = VIDEOS_DIR / "input"
