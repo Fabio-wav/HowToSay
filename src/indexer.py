@@ -22,19 +22,14 @@ class TranscriptIndexer:
 
             sentence = segment["text"].strip()
 
-            words = self.word_regex.findall(sentence.lower())
-
-            for word in words:
-
-                occurrences.append(
-                    Occurrence(
-                        word=word,
-                        sentence=sentence,
-                        video=video_name,
-                        start=segment["start"],
-                        end=segment["end"]
-                    )
+            occurrences.append(
+                Occurrence(
+                    sentence=sentence,
+                    video=video_name,
+                    start=segment["start"],
+                    end=segment["end"]
                 )
+            )
         self.occurrences.extend(occurrences)
         return occurrences
 
