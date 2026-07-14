@@ -37,7 +37,8 @@ class TranscriptIndexer:
                     Occurrence(
                         sentence=sentence.text,
                         start=sentence.start,
-                        end=sentence.end
+                        end=sentence.end,
+                        words=sentence.words
                     )
                 )
 

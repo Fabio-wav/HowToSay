@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 @dataclass
@@ -29,6 +29,8 @@ class Occurrence:
     sentence: str
     start: float
     end: float
+    words: list[Word] = field(default_factory=list)
+
 
 @dataclass
 class SearchResult:
@@ -36,3 +38,5 @@ class SearchResult:
     start: float
     end: float
     video: Video
+    words: list[Word] = field(default_factory=list)
+    transcript: list[Occurrence] = field(default_factory=list)

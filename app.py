@@ -47,11 +47,16 @@ def process_file(file, indexer: TranscriptIndexer, db: Database):
         occurrence_id = db.insert_occurrence(occurrence, video_id)
 
         # Indexa cada palavra da sentença
-        for word in occurrence.sentence.split():
-            word = word.strip(".,!?;:\"'()[]{}").lower()
+        for word in occurrence.words:
+            text = word.text.strip(".,!?;:\"'()[]{}").lower()
 
-            if word:
-                db.insert_word(occurrence_id, word)
+            if text:
+                db.insert_word(
+                    occurrence_id,
+                    text,
+                    word.start,
+                    word.end
+                )
 
     db.commit()
 

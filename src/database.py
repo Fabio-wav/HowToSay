@@ -1,7 +1,7 @@
 import sqlite3
 import hashlib
 
-from src.models import Occurrence, SearchResult, Video
+from src.models import Occurrence, SearchResult, Video, Word
 
 class Database:
 
@@ -37,6 +37,8 @@ class Database:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 occurrence_id INTEGER NOT NULL,
                 word TEXT NOT NULL,
+                start REAL NOT NULL,
+                end REAL NOT NULL,
                 FOREIGN KEY(occurrence_id) REFERENCES occurrences(id)
             )
         """)
@@ -50,6 +52,8 @@ class Database:
             CREATE INDEX IF NOT EXISTS idx_words_word
             ON words(word)
         """)
+
+
 
         self.connection.commit()
 
@@ -119,7 +123,9 @@ class Database:
                     sentence=row[1],
                     start=row[2],
                     end=row[3],
-                    video=video
+                    video=video,
+                    words=self.get_occurrence_words(row[0]),
+                    transcript=self.get_video_transcript(video.id)
                 )
             )
 
@@ -169,12 +175,71 @@ class Database:
 
         return self.cursor.fetchone() is not None
     
-    def insert_word(self, occurrence_id: int, word: str):
+    def insert_word(
+        self,
+        occurrence_id: int,
+        word: str,
+        start: float,
+        end: float
+    ):
 
         self.cursor.execute("""
-            INSERT INTO words (occurrence_id, word)
-            VALUES (?, ?)
+            INSERT INTO words
+            (occurrence_id, word, start, end)
+            VALUES (?, ?, ?, ?)
         """, (
             occurrence_id,
-            word.lower()
+            word.lower(),
+            start,
+            end
         ))
+    
+    def get_occurrence_words(self, occurrence_id: int) -> list[Word]:
+
+        self.cursor.execute("""
+            SELECT word, start, end
+            FROM words
+            WHERE occurrence_id = ?
+            ORDER BY start
+        """, (occurrence_id,))
+
+        rows = self.cursor.fetchall()
+
+        return [
+            Word(
+                text=row[0],
+                start=row[1],
+                end=row[2]
+            )
+            for row in rows
+        ]
+    
+    def get_video_transcript(self, video_id: int) -> list[Occurrence]:
+
+        self.cursor.execute("""
+            SELECT
+                id,
+                sentence,
+                start,
+                end
+            FROM occurrences
+            WHERE video_id = ?
+            ORDER BY start
+        """, (video_id,))
+
+        rows = self.cursor.fetchall()
+
+        transcript = []
+
+        for row in rows:
+
+            occurrence = Occurrence(
+                sentence=row[1],
+                start=row[2],
+                end=row[3],
+                words=self.get_occurrence_words(row[0])
+            )
+
+            transcript.append(occurrence)
+
+        return transcript
