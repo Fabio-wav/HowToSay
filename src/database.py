@@ -68,10 +68,22 @@ class Database:
 
         return self.cursor.lastrowid
 
-    def search(self, word: str) -> list[SearchResult]:
+    def search(self, query: str) -> list[SearchResult]:
 
-        self.cursor.execute("""
-            SELECT DISTINCT
+        words = [
+            word.strip(".,!?;:\"'()[]{}").lower()
+            for word in query.split()
+            if word.strip()
+        ]
+
+        if not words:
+            return []
+
+        placeholders = ",".join("?" * len(words))
+
+        self.cursor.execute(f"""
+            SELECT
+                o.id,
                 o.sentence,
                 o.start,
                 o.end,
@@ -84,8 +96,10 @@ class Database:
                 ON w.occurrence_id = o.id
             INNER JOIN videos v
                 ON o.video_id = v.id
-            WHERE w.word = ?
-        """, (word.lower(),))
+            WHERE w.word IN ({placeholders})
+            GROUP BY o.id
+            HAVING COUNT(DISTINCT w.word) = ?
+        """, (*words, len(words)))
 
         rows = self.cursor.fetchall()
 
@@ -94,17 +108,17 @@ class Database:
         for row in rows:
 
             video = Video(
-                id=row[3],
-                hash=row[4],
-                name=row[5],
-                path=row[6]
+                id=row[4],
+                hash=row[5],
+                name=row[6],
+                path=row[7]
             )
 
             results.append(
                 SearchResult(
-                    sentence=row[0],
-                    start=row[1],
-                    end=row[2],
+                    sentence=row[1],
+                    start=row[2],
+                    end=row[3],
                     video=video
                 )
             )
