@@ -2,7 +2,6 @@ from faster_whisper import WhisperModel
 import json
 from pathlib import Path
 
-# O modelo será baixado automaticamente na primeira execução
 model = WhisperModel(
     "small",
     device="cpu",
@@ -14,7 +13,8 @@ def transcribe(audio_path: Path, output_json: Path):
 
     segments, info = model.transcribe(
         str(audio_path),
-        language="en"
+        language="en",
+        word_timestamps=True
     )
 
     result = {
@@ -26,7 +26,15 @@ def transcribe(audio_path: Path, output_json: Path):
         result["segments"].append({
             "start": segment.start,
             "end": segment.end,
-            "text": segment.text
+            "text": segment.text,
+            "words": [
+                {
+                    "word": word.word,
+                    "start": word.start,
+                    "end": word.end
+                }
+                for word in segment.words
+            ]
         })
 
     output_json.parent.mkdir(parents=True, exist_ok=True)

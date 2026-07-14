@@ -3,43 +3,644 @@
     "segments": [
         {
             "start": 0.0,
-            "end": 11.44,
-            "text": " I was inspired by Brazilian players, Zico, my idol, played for Flamengo, and I was"
+            "end": 11.48,
+            "text": " I was inspired by Brazilian players, Zico, my idol, played for Flamengo, and I was",
+            "words": [
+                {
+                    "word": " I",
+                    "start": 0.0,
+                    "end": 0.94
+                },
+                {
+                    "word": " was",
+                    "start": 0.94,
+                    "end": 1.42
+                },
+                {
+                    "word": " inspired",
+                    "start": 1.42,
+                    "end": 1.92
+                },
+                {
+                    "word": " by",
+                    "start": 1.92,
+                    "end": 2.42
+                },
+                {
+                    "word": " Brazilian",
+                    "start": 2.42,
+                    "end": 4.54
+                },
+                {
+                    "word": " players,",
+                    "start": 4.54,
+                    "end": 5.08
+                },
+                {
+                    "word": " Zico,",
+                    "start": 5.84,
+                    "end": 6.34
+                },
+                {
+                    "word": " my",
+                    "start": 6.66,
+                    "end": 6.98
+                },
+                {
+                    "word": " idol,",
+                    "start": 6.98,
+                    "end": 7.48
+                },
+                {
+                    "word": " played",
+                    "start": 8.06,
+                    "end": 8.2
+                },
+                {
+                    "word": " for",
+                    "start": 8.2,
+                    "end": 8.6
+                },
+                {
+                    "word": " Flamengo,",
+                    "start": 8.6,
+                    "end": 9.32
+                },
+                {
+                    "word": " and",
+                    "start": 10.74,
+                    "end": 11.02
+                },
+                {
+                    "word": " I",
+                    "start": 11.02,
+                    "end": 11.2
+                },
+                {
+                    "word": " was",
+                    "start": 11.2,
+                    "end": 11.48
+                }
+            ]
         },
         {
-            "start": 11.44,
-            "end": 20.6,
-            "text": " completely inspired by him and I was thinking about to be a football player"
+            "start": 11.48,
+            "end": 20.84,
+            "text": " completely inspired by him and I was thinking about to be a football player",
+            "words": [
+                {
+                    "word": " completely",
+                    "start": 11.48,
+                    "end": 12.04
+                },
+                {
+                    "word": " inspired",
+                    "start": 12.04,
+                    "end": 15.7
+                },
+                {
+                    "word": " by",
+                    "start": 15.7,
+                    "end": 16.02
+                },
+                {
+                    "word": " him",
+                    "start": 16.02,
+                    "end": 16.38
+                },
+                {
+                    "word": " and",
+                    "start": 16.38,
+                    "end": 16.92
+                },
+                {
+                    "word": " I",
+                    "start": 16.92,
+                    "end": 17.82
+                },
+                {
+                    "word": " was",
+                    "start": 17.82,
+                    "end": 18.1
+                },
+                {
+                    "word": " thinking",
+                    "start": 18.1,
+                    "end": 18.56
+                },
+                {
+                    "word": " about",
+                    "start": 18.56,
+                    "end": 18.92
+                },
+                {
+                    "word": " to",
+                    "start": 18.92,
+                    "end": 19.24
+                },
+                {
+                    "word": " be",
+                    "start": 19.24,
+                    "end": 19.48
+                },
+                {
+                    "word": " a",
+                    "start": 19.48,
+                    "end": 20.0
+                },
+                {
+                    "word": " football",
+                    "start": 20.0,
+                    "end": 20.26
+                },
+                {
+                    "word": " player",
+                    "start": 20.26,
+                    "end": 20.84
+                }
+            ]
         },
         {
-            "start": 21.400000000000002,
-            "end": 33.04,
-            "text": " and whatever it costs. So I had so many opportunities to become a football player"
+            "start": 20.84,
+            "end": 33.2,
+            "text": " and whatever it costs. So I had so many opportunities to become a football player",
+            "words": [
+                {
+                    "word": " and",
+                    "start": 20.84,
+                    "end": 22.14
+                },
+                {
+                    "word": " whatever",
+                    "start": 22.14,
+                    "end": 23.28
+                },
+                {
+                    "word": " it",
+                    "start": 23.28,
+                    "end": 23.6
+                },
+                {
+                    "word": " costs.",
+                    "start": 23.6,
+                    "end": 24.12
+                },
+                {
+                    "word": " So",
+                    "start": 25.7,
+                    "end": 25.7
+                },
+                {
+                    "word": " I",
+                    "start": 25.7,
+                    "end": 27.48
+                },
+                {
+                    "word": " had",
+                    "start": 27.48,
+                    "end": 27.9
+                },
+                {
+                    "word": " so",
+                    "start": 27.9,
+                    "end": 29.78
+                },
+                {
+                    "word": " many",
+                    "start": 29.78,
+                    "end": 30.74
+                },
+                {
+                    "word": " opportunities",
+                    "start": 30.74,
+                    "end": 31.36
+                },
+                {
+                    "word": " to",
+                    "start": 31.36,
+                    "end": 31.64
+                },
+                {
+                    "word": " become",
+                    "start": 31.64,
+                    "end": 32.2
+                },
+                {
+                    "word": " a",
+                    "start": 32.2,
+                    "end": 32.48
+                },
+                {
+                    "word": " football",
+                    "start": 32.48,
+                    "end": 32.68
+                },
+                {
+                    "word": " player",
+                    "start": 32.68,
+                    "end": 33.2
+                }
+            ]
         },
         {
-            "start": 33.04,
-            "end": 41.8,
-            "text": " and against my mom and my father that said you have to go to school and well"
+            "start": 34.660000000000004,
+            "end": 41.9,
+            "text": " and against my mom and my father that said you have to go to school and well",
+            "words": [
+                {
+                    "word": " and",
+                    "start": 34.660000000000004,
+                    "end": 35.52
+                },
+                {
+                    "word": " against",
+                    "start": 35.52,
+                    "end": 36.38
+                },
+                {
+                    "word": " my",
+                    "start": 36.38,
+                    "end": 36.7
+                },
+                {
+                    "word": " mom",
+                    "start": 36.7,
+                    "end": 36.98
+                },
+                {
+                    "word": " and",
+                    "start": 36.98,
+                    "end": 37.14
+                },
+                {
+                    "word": " my",
+                    "start": 37.14,
+                    "end": 37.28
+                },
+                {
+                    "word": " father",
+                    "start": 37.28,
+                    "end": 37.62
+                },
+                {
+                    "word": " that",
+                    "start": 37.62,
+                    "end": 37.96
+                },
+                {
+                    "word": " said",
+                    "start": 37.96,
+                    "end": 38.38
+                },
+                {
+                    "word": " you",
+                    "start": 38.38,
+                    "end": 39.14
+                },
+                {
+                    "word": " have",
+                    "start": 39.14,
+                    "end": 39.32
+                },
+                {
+                    "word": " to",
+                    "start": 39.32,
+                    "end": 39.48
+                },
+                {
+                    "word": " go",
+                    "start": 39.48,
+                    "end": 39.68
+                },
+                {
+                    "word": " to",
+                    "start": 39.68,
+                    "end": 39.88
+                },
+                {
+                    "word": " school",
+                    "start": 39.88,
+                    "end": 40.32
+                },
+                {
+                    "word": " and",
+                    "start": 40.32,
+                    "end": 40.8
+                },
+                {
+                    "word": " well",
+                    "start": 40.8,
+                    "end": 41.9
+                }
+            ]
         },
         {
-            "start": 41.8,
-            "end": 49.92,
-            "text": " until 15 years old like I went to school but after that I became so famous that"
+            "start": 41.9,
+            "end": 50.339999999999996,
+            "text": " until 15 years old like I went to school but after that I became so famous that I",
+            "words": [
+                {
+                    "word": " until",
+                    "start": 41.9,
+                    "end": 43.12
+                },
+                {
+                    "word": " 15",
+                    "start": 43.12,
+                    "end": 44.02
+                },
+                {
+                    "word": " years",
+                    "start": 44.02,
+                    "end": 44.38
+                },
+                {
+                    "word": " old",
+                    "start": 44.38,
+                    "end": 44.72
+                },
+                {
+                    "word": " like",
+                    "start": 44.72,
+                    "end": 44.98
+                },
+                {
+                    "word": " I",
+                    "start": 44.98,
+                    "end": 45.66
+                },
+                {
+                    "word": " went",
+                    "start": 45.66,
+                    "end": 46.22
+                },
+                {
+                    "word": " to",
+                    "start": 46.22,
+                    "end": 46.46
+                },
+                {
+                    "word": " school",
+                    "start": 46.46,
+                    "end": 46.74
+                },
+                {
+                    "word": " but",
+                    "start": 46.74,
+                    "end": 47.1
+                },
+                {
+                    "word": " after",
+                    "start": 47.1,
+                    "end": 47.52
+                },
+                {
+                    "word": " that",
+                    "start": 47.52,
+                    "end": 47.78
+                },
+                {
+                    "word": " I",
+                    "start": 47.78,
+                    "end": 47.92
+                },
+                {
+                    "word": " became",
+                    "start": 47.92,
+                    "end": 48.26
+                },
+                {
+                    "word": " so",
+                    "start": 48.26,
+                    "end": 49.2
+                },
+                {
+                    "word": " famous",
+                    "start": 49.2,
+                    "end": 49.58
+                },
+                {
+                    "word": " that",
+                    "start": 49.58,
+                    "end": 50.0
+                },
+                {
+                    "word": " I",
+                    "start": 50.0,
+                    "end": 50.35
+                }
+            ]
         },
         {
-            "start": 49.92,
-            "end": 57.24,
-            "text": " I couldn't study in the school I was only taking pictures and I was already"
+            "start": 51.12,
+            "end": 57.8,
+            "text": " couldn't study in the school I was only taking picture and I was already famous",
+            "words": [
+                {
+                    "word": " couldn't",
+                    "start": 51.12,
+                    "end": 51.42
+                },
+                {
+                    "word": " study",
+                    "start": 51.42,
+                    "end": 51.96
+                },
+                {
+                    "word": " in",
+                    "start": 51.96,
+                    "end": 52.3
+                },
+                {
+                    "word": " the",
+                    "start": 52.3,
+                    "end": 52.44
+                },
+                {
+                    "word": " school",
+                    "start": 52.44,
+                    "end": 52.72
+                },
+                {
+                    "word": " I",
+                    "start": 52.72,
+                    "end": 52.92
+                },
+                {
+                    "word": " was",
+                    "start": 52.92,
+                    "end": 53.12
+                },
+                {
+                    "word": " only",
+                    "start": 53.12,
+                    "end": 53.38
+                },
+                {
+                    "word": " taking",
+                    "start": 53.38,
+                    "end": 53.62
+                },
+                {
+                    "word": " picture",
+                    "start": 53.62,
+                    "end": 54.1
+                },
+                {
+                    "word": " and",
+                    "start": 54.1,
+                    "end": 54.52
+                },
+                {
+                    "word": " I",
+                    "start": 54.52,
+                    "end": 55.52
+                },
+                {
+                    "word": " was",
+                    "start": 55.52,
+                    "end": 56.8
+                },
+                {
+                    "word": " already",
+                    "start": 56.8,
+                    "end": 57.16
+                },
+                {
+                    "word": " famous",
+                    "start": 57.16,
+                    "end": 57.8
+                }
+            ]
         },
         {
-            "start": 57.24,
-            "end": 66.16,
-            "text": " famous at 15 years old at Cusero and against my mom and my father and I gave"
+            "start": 57.8,
+            "end": 66.82,
+            "text": " at 15 years old at Cusero and against my mom and my father and I gave everything",
+            "words": [
+                {
+                    "word": " at",
+                    "start": 57.8,
+                    "end": 58.16
+                },
+                {
+                    "word": " 15",
+                    "start": 58.16,
+                    "end": 59.06
+                },
+                {
+                    "word": " years",
+                    "start": 59.06,
+                    "end": 59.38
+                },
+                {
+                    "word": " old",
+                    "start": 59.38,
+                    "end": 59.68
+                },
+                {
+                    "word": " at",
+                    "start": 59.68,
+                    "end": 59.86
+                },
+                {
+                    "word": " Cusero",
+                    "start": 59.86,
+                    "end": 60.36
+                },
+                {
+                    "word": " and",
+                    "start": 60.36,
+                    "end": 63.08
+                },
+                {
+                    "word": " against",
+                    "start": 63.08,
+                    "end": 64.0
+                },
+                {
+                    "word": " my",
+                    "start": 64.0,
+                    "end": 64.28
+                },
+                {
+                    "word": " mom",
+                    "start": 64.28,
+                    "end": 64.54
+                },
+                {
+                    "word": " and",
+                    "start": 64.54,
+                    "end": 64.68
+                },
+                {
+                    "word": " my",
+                    "start": 64.68,
+                    "end": 64.82
+                },
+                {
+                    "word": " father",
+                    "start": 64.82,
+                    "end": 65.14
+                },
+                {
+                    "word": " and",
+                    "start": 65.14,
+                    "end": 65.36
+                },
+                {
+                    "word": " I",
+                    "start": 65.36,
+                    "end": 65.86
+                },
+                {
+                    "word": " gave",
+                    "start": 65.86,
+                    "end": 66.16
+                },
+                {
+                    "word": " everything",
+                    "start": 66.16,
+                    "end": 66.82
+                }
+            ]
         },
         {
-            "start": 66.16,
-            "end": 71.32000000000001,
-            "text": " everything to to became a football player"
+            "start": 66.82,
+            "end": 69.34,
+            "text": " to to become a football player.",
+            "words": [
+                {
+                    "word": " to",
+                    "start": 66.82,
+                    "end": 67.32
+                },
+                {
+                    "word": " to",
+                    "start": 67.32,
+                    "end": 67.92
+                },
+                {
+                    "word": " become",
+                    "start": 67.92,
+                    "end": 68.36
+                },
+                {
+                    "word": " a",
+                    "start": 68.36,
+                    "end": 68.62
+                },
+                {
+                    "word": " football",
+                    "start": 68.62,
+                    "end": 68.84
+                },
+                {
+                    "word": " player.",
+                    "start": 68.84,
+                    "end": 69.34
+                }
+            ]
         }
     ]
 }

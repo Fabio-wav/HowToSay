@@ -3,78 +3,408 @@
     "segments": [
         {
             "start": 0.0,
-            "end": 3.0,
-            "text": " Last call, have a drink!"
+            "end": 2.5,
+            "text": " Last call, have a drink!",
+            "words": [
+                {
+                    "word": " Last",
+                    "start": 0.0,
+                    "end": 0.66
+                },
+                {
+                    "word": " call,",
+                    "start": 0.66,
+                    "end": 1.18
+                },
+                {
+                    "word": " have",
+                    "start": 1.8,
+                    "end": 2.0
+                },
+                {
+                    "word": " a",
+                    "start": 2.0,
+                    "end": 2.12
+                },
+                {
+                    "word": " drink!",
+                    "start": 2.12,
+                    "end": 2.5
+                }
+            ]
         },
         {
-            "start": 3.0,
-            "end": 4.5,
-            "text": " Argh!"
+            "start": 3.22,
+            "end": 3.8,
+            "text": " Argh!",
+            "words": [
+                {
+                    "word": " Argh!",
+                    "start": 3.22,
+                    "end": 3.8
+                }
+            ]
         },
         {
-            "start": 4.5,
-            "end": 6.0,
-            "text": " Don't shits!"
+            "start": 4.54,
+            "end": 5.6,
+            "text": " Don't shits!",
+            "words": [
+                {
+                    "word": " Don't",
+                    "start": 4.54,
+                    "end": 5.08
+                },
+                {
+                    "word": " shits!",
+                    "start": 5.08,
+                    "end": 5.6
+                }
+            ]
         },
         {
-            "start": 6.0,
-            "end": 9.0,
-            "text": " Abbey our incoming!"
+            "start": 6.16,
+            "end": 8.18,
+            "text": " Abbey our incoming!",
+            "words": [
+                {
+                    "word": " Abbey",
+                    "start": 6.16,
+                    "end": 6.72
+                },
+                {
+                    "word": " our",
+                    "start": 6.72,
+                    "end": 7.06
+                },
+                {
+                    "word": " incoming!",
+                    "start": 7.06,
+                    "end": 8.18
+                }
+            ]
         },
         {
-            "start": 9.0,
-            "end": 10.3,
-            "text": " Fight time!"
+            "start": 9.06,
+            "end": 9.84,
+            "text": " Fight time!",
+            "words": [
+                {
+                    "word": " Fight",
+                    "start": 9.06,
+                    "end": 9.36
+                },
+                {
+                    "word": " time!",
+                    "start": 9.36,
+                    "end": 9.84
+                }
+            ]
         },
         {
-            "start": 10.3,
-            "end": 12.8,
-            "text": " Time to roll out the barrel!"
+            "start": 10.34,
+            "end": 12.36,
+            "text": " Time to roll out the barrel!",
+            "words": [
+                {
+                    "word": " Time",
+                    "start": 10.34,
+                    "end": 10.64
+                },
+                {
+                    "word": " to",
+                    "start": 10.64,
+                    "end": 10.88
+                },
+                {
+                    "word": " roll",
+                    "start": 10.88,
+                    "end": 11.28
+                },
+                {
+                    "word": " out",
+                    "start": 11.28,
+                    "end": 11.62
+                },
+                {
+                    "word": " the",
+                    "start": 11.62,
+                    "end": 11.86
+                },
+                {
+                    "word": " barrel!",
+                    "start": 11.86,
+                    "end": 12.36
+                }
+            ]
         },
         {
-            "start": 21.0,
-            "end": 25.5,
-            "text": " The only time I have a drinking problem is when I spill it!"
+            "start": 19.700000000000003,
+            "end": 25.26,
+            "text": " The only time I have a drinking problem is when I spill it!",
+            "words": [
+                {
+                    "word": " The",
+                    "start": 19.700000000000003,
+                    "end": 20.64
+                },
+                {
+                    "word": " only",
+                    "start": 20.64,
+                    "end": 21.58
+                },
+                {
+                    "word": " time",
+                    "start": 21.58,
+                    "end": 22.1
+                },
+                {
+                    "word": " I",
+                    "start": 22.1,
+                    "end": 22.38
+                },
+                {
+                    "word": " have",
+                    "start": 22.38,
+                    "end": 22.56
+                },
+                {
+                    "word": " a",
+                    "start": 22.56,
+                    "end": 22.7
+                },
+                {
+                    "word": " drinking",
+                    "start": 22.7,
+                    "end": 23.12
+                },
+                {
+                    "word": " problem",
+                    "start": 23.12,
+                    "end": 23.68
+                },
+                {
+                    "word": " is",
+                    "start": 23.68,
+                    "end": 24.08
+                },
+                {
+                    "word": " when",
+                    "start": 24.08,
+                    "end": 24.32
+                },
+                {
+                    "word": " I",
+                    "start": 24.32,
+                    "end": 24.5
+                },
+                {
+                    "word": " spill",
+                    "start": 24.5,
+                    "end": 24.9
+                },
+                {
+                    "word": " it!",
+                    "start": 24.9,
+                    "end": 25.26
+                }
+            ]
         },
         {
-            "start": 30.5,
-            "end": 33.5,
-            "text": " Hahaha!"
+            "start": 30.060000000000002,
+            "end": 30.86,
+            "text": " Hahaha!",
+            "words": [
+                {
+                    "word": " Hahaha!",
+                    "start": 30.060000000000002,
+                    "end": 30.86
+                }
+            ]
         },
         {
-            "start": 33.5,
-            "end": 36.0,
-            "text": " Don't get pushy!"
+            "start": 33.98,
+            "end": 35.72,
+            "text": " Don't get pushy!",
+            "words": [
+                {
+                    "word": " Don't",
+                    "start": 33.98,
+                    "end": 34.54
+                },
+                {
+                    "word": " get",
+                    "start": 34.54,
+                    "end": 34.7
+                },
+                {
+                    "word": " pushy!",
+                    "start": 34.7,
+                    "end": 35.72
+                }
+            ]
         },
         {
-            "start": 36.0,
-            "end": 39.0,
-            "text": " Yeah, yeah, need some grog!"
+            "start": 36.08,
+            "end": 38.7,
+            "text": " Yeah, yeah, need some grog!",
+            "words": [
+                {
+                    "word": " Yeah,",
+                    "start": 36.08,
+                    "end": 36.48
+                },
+                {
+                    "word": " yeah,",
+                    "start": 36.64,
+                    "end": 36.84
+                },
+                {
+                    "word": " need",
+                    "start": 37.22,
+                    "end": 37.58
+                },
+                {
+                    "word": " some",
+                    "start": 37.58,
+                    "end": 37.92
+                },
+                {
+                    "word": " grog!",
+                    "start": 37.92,
+                    "end": 38.7
+                }
+            ]
         },
         {
-            "start": 39.0,
-            "end": 40.5,
-            "text": " Oh, yeah!"
+            "start": 39.12,
+            "end": 40.02,
+            "text": " Oh, yeah!",
+            "words": [
+                {
+                    "word": " Oh,",
+                    "start": 39.12,
+                    "end": 39.62
+                },
+                {
+                    "word": " yeah!",
+                    "start": 39.68,
+                    "end": 40.02
+                }
+            ]
         },
         {
-            "start": 40.5,
-            "end": 42.0,
-            "text": " Get some!"
+            "start": 40.64,
+            "end": 41.38,
+            "text": " Get some!",
+            "words": [
+                {
+                    "word": " Get",
+                    "start": 40.64,
+                    "end": 40.92
+                },
+                {
+                    "word": " some!",
+                    "start": 40.92,
+                    "end": 41.38
+                }
+            ]
         },
         {
-            "start": 42.0,
-            "end": 43.5,
-            "text": " I'm on it!"
+            "start": 41.92,
+            "end": 43.0,
+            "text": " I'm on it!",
+            "words": [
+                {
+                    "word": " I'm",
+                    "start": 41.92,
+                    "end": 42.42
+                },
+                {
+                    "word": " on",
+                    "start": 42.42,
+                    "end": 42.68
+                },
+                {
+                    "word": " it!",
+                    "start": 42.68,
+                    "end": 43.0
+                }
+            ]
         },
         {
-            "start": 43.5,
-            "end": 45.5,
-            "text": " Let's get this party started!"
+            "start": 43.44,
+            "end": 45.26,
+            "text": " Let's get this party started!",
+            "words": [
+                {
+                    "word": " Let's",
+                    "start": 43.44,
+                    "end": 43.82
+                },
+                {
+                    "word": " get",
+                    "start": 43.82,
+                    "end": 44.02
+                },
+                {
+                    "word": " this",
+                    "start": 44.02,
+                    "end": 44.22
+                },
+                {
+                    "word": " party",
+                    "start": 44.22,
+                    "end": 44.62
+                },
+                {
+                    "word": " started!",
+                    "start": 44.62,
+                    "end": 45.26
+                }
+            ]
         },
         {
-            "start": 47.5,
-            "end": 51.0,
-            "text": " I'll drink you under the table, scrub!"
+            "start": 47.14,
+            "end": 50.52,
+            "text": " I'll drink you under the table, scrub!",
+            "words": [
+                {
+                    "word": " I'll",
+                    "start": 47.14,
+                    "end": 47.94
+                },
+                {
+                    "word": " drink",
+                    "start": 47.94,
+                    "end": 48.34
+                },
+                {
+                    "word": " you",
+                    "start": 48.34,
+                    "end": 48.74
+                },
+                {
+                    "word": " under",
+                    "start": 48.74,
+                    "end": 49.04
+                },
+                {
+                    "word": " the",
+                    "start": 49.04,
+                    "end": 49.3
+                },
+                {
+                    "word": " table,",
+                    "start": 49.3,
+                    "end": 49.82
+                },
+                {
+                    "word": " scrub!",
+                    "start": 50.14,
+                    "end": 50.52
+                }
+            ]
         }
     ]
 }

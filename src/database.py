@@ -1,25 +1,25 @@
 import sqlite3
 import hashlib
 
-from src.models import Occurrence, Video
-
+from src.models import Occurrence, SearchResult, Video
 
 class Database:
 
     def __init__(self, db_name="database.db"):
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
+        self.cursor.execute("PRAGMA foreign_keys = ON")
 
     def create_tables(self):
 
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS videos(
-                id  INTEGER PRIMARY KEY AUTOINCREMENT,
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 hash TEXT UNIQUE NOT NULL,
                 name TEXT NOT NULL,
                 path TEXT NOT NULL
-                )
-        """ )
+            )
+        """)
 
         self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS occurrences (
@@ -33,14 +33,27 @@ class Database:
         """)
 
         self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS words (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                occurrence_id INTEGER NOT NULL,
+                word TEXT NOT NULL,
+                FOREIGN KEY(occurrence_id) REFERENCES occurrences(id)
+            )
+        """)
+
+        self.cursor.execute("""
             CREATE INDEX IF NOT EXISTS idx_occurrences_video_id
             ON occurrences(video_id)
         """)
 
+        self.cursor.execute("""
+            CREATE INDEX IF NOT EXISTS idx_words_word
+            ON words(word)
+        """)
+
         self.connection.commit()
 
-
-    def insert_occurrence(self, occurrence: Occurrence, video_id: int):
+    def insert_occurrence(self, occurrence: Occurrence, video_id: int) -> int:
 
         self.cursor.execute("""
             INSERT INTO occurrences
@@ -53,10 +66,12 @@ class Database:
             occurrence.end
         ))
 
-    def search(self, word: str) -> list[Occurrence]:
+        return self.cursor.lastrowid
+
+    def search(self, word: str) -> list[SearchResult]:
 
         self.cursor.execute("""
-            SELECT
+            SELECT DISTINCT
                 o.sentence,
                 o.start,
                 o.end,
@@ -64,15 +79,17 @@ class Database:
                 v.hash,
                 v.name,
                 v.path
-            FROM occurrences o
+            FROM words w
+            INNER JOIN occurrences o
+                ON w.occurrence_id = o.id
             INNER JOIN videos v
                 ON o.video_id = v.id
-            WHERE LOWER(o.sentence) LIKE ?
-        """, (f"%{word.lower()}%",))
+            WHERE w.word = ?
+        """, (word.lower(),))
 
         rows = self.cursor.fetchall()
 
-        occurrences = []
+        results = []
 
         for row in rows:
 
@@ -83,16 +100,16 @@ class Database:
                 path=row[6]
             )
 
-            occurrence = Occurrence(
-                sentence=row[0],
-                start=row[1],
-                end=row[2],
-                video=video
+            results.append(
+                SearchResult(
+                    sentence=row[0],
+                    start=row[1],
+                    end=row[2],
+                    video=video
+                )
             )
 
-            occurrences.append(occurrence)
-
-        return occurrences
+        return results
 
     def close(self):
         self.connection.close()
@@ -137,3 +154,13 @@ class Database:
         """, (file_hash,))
 
         return self.cursor.fetchone() is not None
+    
+    def insert_word(self, occurrence_id: int, word: str):
+
+        self.cursor.execute("""
+            INSERT INTO words (occurrence_id, word)
+            VALUES (?, ?)
+        """, (
+            occurrence_id,
+            word.lower()
+        ))

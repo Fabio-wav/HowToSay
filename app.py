@@ -33,10 +33,7 @@ def process_file(file, indexer: TranscriptIndexer, db: Database):
         transcript = TRANSCRIPT_DIR / f"{file.stem}.json"
         transcribe(file, transcript)
 
-    occurrences = indexer.index_file(
-        transcript_path=transcript,
-        video_name=file.name
-    )
+    occurrences = indexer.index_file(transcript)
 
     db.insert_video(
         file_hash=file_hash,
@@ -47,7 +44,14 @@ def process_file(file, indexer: TranscriptIndexer, db: Database):
     video_id = db.get_video_id(file_hash)
 
     for occurrence in occurrences:
-        db.insert_occurrence(occurrence, video_id)
+        occurrence_id = db.insert_occurrence(occurrence, video_id)
+
+        # Indexa cada palavra da sentença
+        for word in occurrence.sentence.split():
+            word = word.strip(".,!?;:\"'()[]{}").lower()
+
+            if word:
+                db.insert_word(occurrence_id, word)
 
     db.commit()
 

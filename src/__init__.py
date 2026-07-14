@@ -3,3 +3,4 @@ def __init__(self, db_name="database.db"):
     self.cursor = self.connection.cursor()
 
     self.cursor.execute("PRAGMA foreign_keys = ON")
+
